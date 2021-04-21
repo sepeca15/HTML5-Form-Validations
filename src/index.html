@@ -16,6 +16,7 @@
     ></script>
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
+
   <body>
     <div class="container">
       <!-- formulario de pago -->
@@ -24,14 +25,14 @@
           <h1>Formulario de pago ejemplo</h1>
         </div>
         <div class="card-body">
-          <div
-            id="alert"
-            class="alert alert-danger font-weight-bold"
-            role="alert"
-          >
-            Faltan algunos campos
-          </div>
-          <form>
+          <form id="formulario">
+            <div
+              id="alert"
+              class="d-none alert alert-danger font-weight-bold"
+              role="alert"
+            >
+              Faltan algunos campos
+            </div>
             <!-- fila1 -->
             <div class="row">
               <!-- Tarjeta -->
@@ -219,7 +220,9 @@
               <button type="submit" class="btn btn-secondary">Cancelar</button>
             </div>
             <div class="col-1">
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button id="enviar" type="submit" class="btn btn-primary">
+                Enviar
+              </button>
             </div>
           </div>
         </div>
